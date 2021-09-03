@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "hello_unicorn"
+version = "0.1.0"
+description = ""
+authors = ["Rick Henry <rickhenry@rickhenry.dev>"]
+license = "MIT"
+
+[tool.poetry.dependencies]
+python = "^3.9"
+Django = "^3.2.7"
+django-unicorn = "^0.34.0"
+psycopg2 = "^2.9.1"
+django-environ = "^0.5.0"
+dj-database-url = "^0.5.0"
+whitenoise = {extras = ["brotli"], version = "^5.3.0"}
+gunicorn = "^20.1.0"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
