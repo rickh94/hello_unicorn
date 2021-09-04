@@ -8,7 +8,7 @@ services:
     name: hello_unicorn
     env: python
     buildCommand: "./build.sh"
-    startCommand: "hypercorn hello_unicorn.asgi:application"
+    startCommand: "gunicorn hello_unicorn.wsgi:application"
     envVars:
       - key: DATABASE_URL
         fromDatabase:
